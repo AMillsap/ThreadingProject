@@ -1,0 +1,19 @@
+1. What are loaders and how do we implement loaders?
+Loaders are a way to load data from a content provider by using callbacks. They monitor their data source
+and deliver new results when their contents change. You implement them by making a loader manager and using
+loader callbacks.
+
+2. What is an AsyncTaskLoader?
+AsyncTaskLoader is a loader for multiple AsyncTasks
+
+3. What is a Handler Thread for?
+Handler thread is used for handling threads in the background this allows them to communicate to the UI thread.
+
+4. What are some common threading restrictions in android?
+Some common threading restrictions are you can't block the UI thread and you don't access the UI toolkit from
+outside the UI thread.
+
+5. What are thread pools and thread pool executors?
+Thread pools are a collection of previously created threads used to do current tasks. The thread pool
+executors implement these thread pools and handles when the threads are used and for what tasks. This
+lets the programmer just have to worry about the tasks being done by the threads and not the thread mechanics.
